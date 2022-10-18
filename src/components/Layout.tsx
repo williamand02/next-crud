@@ -1,11 +1,10 @@
 import Title from "./Title";
-
 interface LayoutProps {
   title: string;
   children: any;
 }
 
-const Layout = (props: LayoutProps) => {
+export default function Layout(props: LayoutProps) {
   return (
     <div
       className={`
@@ -17,6 +16,4 @@ const Layout = (props: LayoutProps) => {
       <div className="p-6">{props.children}</div>
     </div>
   );
-};
-
-export default Layout;
+}
