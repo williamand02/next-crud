@@ -21,7 +21,7 @@ export default class Client {
     return this.#name;
   }
 
-  get idade() {
+  get age() {
     return this.#age;
   }
 }
